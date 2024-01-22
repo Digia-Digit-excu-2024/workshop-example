@@ -32,26 +32,28 @@ public class MainRouteBuilder extends RouteBuilder {
 
         rest(apiBase)
                 .get("/demo/{limit}")
-                .to("direct:start-routing")
+                .to("direct:extraction-route")
                 .get("/demo")
-                .to("direct:start-routing")
+                .to("direct:extraction-route")
         ;
 
         // extract - Lataa tietoa jostain
-        from("direct:start-routing").routeId("http-demo-route")
+        from("direct:extraction-route").routeId("http-demo-route")
                 .log(LoggingLevel.INFO, "Käynnistetään reitti")
                 .log(LoggingLevel.INFO, "Haetaan palautteet")
                 .removeHeaders("*", "limit")
                 .setHeader(Exchange.HTTP_QUERY, constant("start_date=" + weekAgo + "Z"))
                 .to(turkuApi)
                 .split().tokenizeXML("request").streaming()
+                .to("direct:processing-route")
+        ;
+
+        // transform - Tee käsittelyt sekä formaatinmuutokset
+        from("direct:processing-route").routeId("workshop processing route")
                 .unmarshal(xmlDataFormat)
                 .process("xmlDataProcessor")
                 .stop()
         ;
-
-        // transform - Tee käsittelyt sekä formaatinmuutokset
-
 
 
         // load - Lataa tieto johonkin suuntaan, tässä tapauksessa palauta naamalle

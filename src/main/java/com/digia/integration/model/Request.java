@@ -4,12 +4,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 import jakarta.enterprise.context.ApplicationScoped;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.jackson.Jacksonized;
 
-@Getter
-@Setter
+@Getter @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Builder @Jacksonized
 @ApplicationScoped
 @RegisterForReflection
 public class Request {

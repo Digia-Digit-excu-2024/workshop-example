@@ -13,7 +13,8 @@ import org.slf4j.LoggerFactory;
 public class XmlDataProcessor implements Processor {
 
     private static final Logger log = LoggerFactory.getLogger(XmlDataProcessor.class);
-
+    // me ollaan kiinnostuneita palautteen sisällöstä ja vastauksesta
+    // relevantit kentät lähdexml:ssä siis description ja status_notes
     @Override
     public void process(Exchange exchange) throws Exception {
         Request request = exchange.getIn().getBody(Request.class);
