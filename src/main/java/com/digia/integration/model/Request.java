@@ -1,36 +1,32 @@
 package com.digia.integration.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 import jakarta.enterprise.context.ApplicationScoped;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.jackson.Jacksonized;
 
 @Getter @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Builder @Jacksonized
 @ApplicationScoped
 @RegisterForReflection
 public class Request {
 
-    @JsonProperty("description")
+    @JacksonXmlProperty(localName = "description")
     String description;
-    @JsonProperty("requested_datetime")
+    @JacksonXmlProperty(localName = "requested_datetime")
     String dateTimeRequested;
-    @JsonProperty("service_code")
+    @JacksonXmlProperty(localName = "service_code")
     String serviceCode;
-    @JsonProperty("service_name")
+    @JacksonXmlProperty(localName = "service_name")
     String serviceName;
-    @JsonProperty("service_request_id")
+    @JacksonXmlProperty(localName = "service_request_id")
     String requestId;
-    @JsonProperty
     String status;
-    @JsonProperty("status_notes")
+    @JacksonXmlProperty(localName = "status_notes")
     String notes;
-    @JsonProperty("updated_datetime")
+    @JacksonXmlProperty(localName = "updated_datetime")
     String dateTimeUpdated;
 
     @Override
