@@ -3,7 +3,6 @@ package com.digia.integration.processor;
 import com.digia.integration.model.Feedback;
 import com.digia.integration.model.Request;
 import com.digia.integration.model.ServiceRequests;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Named;
 import org.apache.camel.Exchange;
@@ -12,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.List;
 
 @ApplicationScoped
 @Named("xmlDataProcessor")

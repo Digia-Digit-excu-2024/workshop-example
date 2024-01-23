@@ -1,4 +1,4 @@
-# camel-workshop
+# camel-workshop-example
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 

@@ -5,7 +5,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
 
-@Setter @Getter
+@Data
 @Builder @Jacksonized
 @RegisterForReflection
 @ApplicationScoped
@@ -16,4 +16,5 @@ public class Feedback {
     String content;
 
     String response;
+
 }

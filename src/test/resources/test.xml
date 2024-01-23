@@ -1,0 +1,30 @@
+<service_requests>
+    <request>
+        <description>
+            Linja 300. Ikean edustalla on uusi asuinalue, missä asukasluku nousee jatkuvasti. Nyt lopetettiin ainoa vuoro, jolla kahdeksaksi töihin menevät ovat ehtineet työpaikallensa ( mikäli kulkeminen vaatii vaihtoa torilla). Ensin sitä aikaistettiin 7.10 --> 7.05; tämäkin oli vielä kohtuullista, mutta koko vuoron lopettaminen ei. Nyt busseja menee 6.50 ja seuraava 7.19, 7.20, 7.30, 7.31. Erittäin ikävä päätös. Vuoro oli poikkeuksetta täynnä torille tultaessa, joten on hankalaa keksiä mitään järkevää perustelua tälle ratkaisulle. Eikö ole mitään toivoa sille, että uuden asuinalueen jatkuvasti kasvava väestö + jo kauemmin alueella asuvat pääsisivät edelleen joukkoliikenteen palveluin työpaikalle?
+        </description>
+        <requested_datetime>2017-01-02T09:37:11.267Z</requested_datetime>
+        <service_code>46690143-a728-eb11-81ad-e32a8d4eb78b</service_code>
+        <service_name>Föli - Aikataulut ja reitit</service_name>
+        <service_request_id>61799</service_request_id>
+        <status>closed</status>
+        <status_notes>
+            Hei, Kiitos palautteestanne. Linjan 300 aikataulut muuttuivat vuoden alusta, koska kyseinen linja liikennöi nyt myös Petäsmäkeen. Otamme toiveenne huomioon, kun suunnittelemme tulevaa. Mukavaa alkanutta vuotta! Ystävällisin terveisin FÖLI - Turun seudun joukkoliikenne
+        </status_notes>
+        <updated_datetime>2017-01-04T12:09:14.65</updated_datetime>
+    </request>
+    <request>
+        <description>
+            tähkäpuiston ja terveydenoppilaitoksen väliin on muodostunut omavaltainen pysäköintialue vaikka siellä on aluepysäköinti kielto
+        </description>
+        <requested_datetime>2017-01-02T09:43:09.347Z</requested_datetime>
+        <service_code>f92b7c22-39b9-eb11-81db-9cc9d4f0194c</service_code>
+        <service_name>Kadut ja liikenne - Pysäköinti</service_name>
+        <service_request_id>61800</service_request_id>
+        <status>closed</status>
+        <status_notes>
+            Kiitos palautteesta. Alueelle on nähtävästi tulossa muutoksia pysäköinnin suhteen. Turun kaupunki Kiinteistöliikelaitos Pysäköininvalvonta
+        </status_notes>
+        <updated_datetime>2017-01-02T12:35:18.71</updated_datetime>
+    </request>
+</service_requests>
